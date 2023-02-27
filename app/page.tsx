@@ -1,7 +1,12 @@
-export default function Page() {
+import React from 'react'
+import Banner from './components/Banner'
+
+function page() {
   return (
-    <h1 className="text-5xl font-bold underline">
-      Hello, Next.js from Zia Khan!
-    </h1>
-  );
+<>
+<Banner />
+</>
+    )
 }
+
+export default page
