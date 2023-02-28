@@ -22,7 +22,8 @@ function Navbar() {
           Courses
         </Link>
       </div>
-      <div className="flex space-x-4 mt-4 font-medium rounded-lg py-2.5 px-3 hover:bg-blue-700">
+      
+      <div className="flex space-x-4 mt-4 font-medium rounded-lg py-2.5 px-3 w-15 bg-blue-700 hover:bg-red-500">
         <Link href="https://portal.piaic.org/" className="">
           Apply
         </Link>
