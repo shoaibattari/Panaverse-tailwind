@@ -1,34 +1,44 @@
-import logo from "../../public/logo.png";
+ "use client"
+ import logo from "../../public/logo.png";
 import Image from "next/image";
-
 import React from "react";
 import Link from "next/link";
 import Button from "./Button";
+import { useState } from 'react'
+import { GiHamburgerMenu } from "react-icons/gi";
+
+export const NAV = [
+  { id: 1, name: "Home", link: "/" },
+  { id: 2, name: "Courses", link: "/Courses" },
+  { id: 3, name: "Piaic", link: "https://portal.piaic.org" },
+  { id: 4, name: "Panaverse", link: "https://www.panaverse.co" },
+  { id: 5, name: "Contact", link: "https://github.com/shoaibattari" },
+];
+// let [open,setOpen]=useState(false);
 
 function Navbar() {
   return (
-    <div className="flex justify-between max-x-screen-xl mx-auto bg-blue-100 py-1 px-2 sticky top-0 items-center ">
-      <div>
+    <div className="flex justify-between md:justify-between pt-5 bg-cyan-100">
+           <div className="duration-500 hover:-translate-y-3.5">
         <Link href="/">
-          <Image src={logo} width={80} height={80} alt="Logo" />
+          <Image src={logo} width={100} height={40} alt="Logo" />
         </Link>
       </div>
-      <div className="flex space-x-4 mt-4 font-medium  -mx-3  ">
-        <Link
-          className=" rounded-lg py-2.5 px-3 hover:bg-blue-400"
-          href="/"
+      {NAV.map((link) => (
+        <div
+          key={link.id}
+          className="md:flex md:space-x-4 mt-1 font-semibold md:ml-8 text-xl md:my-0 my-7"
         >
-          Home
-        </Link>
-        <Link
-          className=" rounded-lg py-2.5 px-3 hover:bg-blue-400"
-          href="/Courses"
-        >
-          Courses
-        </Link>
-      </div>
-
-      <div className="mt-3">
+          <Link
+            href={link.link}
+            className="text-gray-800 hover:text-gray-400 duration-500 hover:translate-y-3"
+          >
+            {link.name}
+          </Link>
+        </div>
+      ))}
+      <div className="md:hidden flex basis-16 mt-5	 text-3xl "></div>
+      <div className="px-8">
         <Button text={"Apply"} link={"https://portal.piaic.org/"} />
       </div>
     </div>
