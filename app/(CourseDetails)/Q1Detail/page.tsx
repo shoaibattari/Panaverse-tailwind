@@ -14,7 +14,7 @@ function Q1Details() {
                 {ele.mainH}
               </p>
               <dt className="mt-3  rounded-lg bg-indigo-600 px-3 py-2 text-center text-sm lg:text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500">
-                <Link href={"ele.Link"}> {ele.Heading}</Link>
+                <Link href={ele.Link}> {ele.Heading}</Link>
               </dt>
             </div>
           ))}
