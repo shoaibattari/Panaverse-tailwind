@@ -28,16 +28,14 @@ function Navbar() {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl  absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl  absolute right-8 top-6 cursor-pointer md:hidden" 
         >
           <GiHamburgerMenu name={open ? "close" : "menu"}></GiHamburgerMenu>
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 bg-cyan-200 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ${
-            open ? "top-20 " : "top-[-490px]"
-          }`}
-        >
+          className={`md:flex md:items-center md:pb-0 pb-12 bg-cyan-200 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in${open ? "top-20 " : "top-[-490px]"
+          }`}>
           {NAV.map((link) => (
             <li key={link.id} className="md:mr-20  text-xl md:my-0 my-7">
               <Link
