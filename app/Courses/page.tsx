@@ -21,7 +21,8 @@ function page() {
               {cards.map((ele) => (
                 <div
                   key={ele.id}
-                  className=" rounded-lg mt-5 px-3 bg-gray-200 py-10 text-center ring-1 ring-inset ring-gray-900/5 duration-700 hover:scale-110  translate-y-3 -skew-x-3	"
+                  className=" rounded-lg mt-5 px-3 bg-gray-200 py-10 text-center ring-1 ring-inset ring-gray-900/5 
+                  duration-700 hover:scale-110  translate-3 -skew-x-3	"
                 >
                   <dt className="font-bold text-3xl py-4 text-indigo-600">
                     {ele.heading1}

@@ -21,7 +21,9 @@ function Q1Details() {
         </dl>
         <div className="flex justify-around mt-5">
           {Q1link.map((ele) => (
+             <div  key={ele.id}>
             <Button text={ele.btntext} link={ele.btnlink} />
+            </div>
           ))}
         </div>
       </div>
