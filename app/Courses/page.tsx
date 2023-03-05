@@ -21,24 +21,24 @@ function page() {
               {cards.map((ele) => (
                 <div
                   key={ele.id}
-                  className=" rounded-lg mt-5 px-3 bg-gray-200 py-10 text-center ring-1 ring-inset ring-gray-900/5 
-                  duration-700 hover:scale-110  translate-3 -skew-x-3	"
+                  className=" rounded-lg mt-5 px-3 bg-cyan-200 py-10 text-center ring-1 ring-inset ring-gray-900/5 
+                  duration-700 hover:scale-110 skew-x-0  md:skew-x-3	"
                 >
-                  <dt className="font-bold text-3xl py-4 text-indigo-600">
+                  <dt className="font-bold  underline underline-offset-8 text-3xl py-4 text-indigo-900  ">
                     {ele.heading1}
                   </dt>
-                  <dd className="mt-10 text-left  text-base leading-2 lg:text-center  text-gray-600">
+                  <dd className="mt-10 text-left  text-1xl md:text-2xl  leading-2 lg:text-center  text-gray-800">
                     {ele.headingText}
                   </dd>
 
-                  <dt className="font-semibold text-2xl py-10  text-indigo-600">
+                  <dt className="font-semibold text-lg md:text-3xl py-10  text-indigo-600">
                     {ele.card1Heading}
                   </dt>
-                  <dd className="mt-4 text-base  text-gray-600">
+                  <dd className="mt-4  text-base  text-gray-600">
                     <Button text={"Course Detail"} link={ele.card1Link} />
                   </dd>
 
-                  <dt className="font-semibold text-2xl py-10 text-indigo-600">
+                  <dt className="font-semibold text-lg md:text-3xl py-10 text-indigo-600">
                     {ele.card2Heading}
                   </dt>
                   <dd className="mt-4 text-base  text-gray-600">

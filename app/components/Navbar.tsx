@@ -1,10 +1,10 @@
- "use client"
- import logo from "../../public/logo.png";
+"use client";
+import logo from "../../public/logo.png";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import Button from "./Button";
-import { useState } from 'react'
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export const NAV = [
@@ -16,9 +16,15 @@ export const NAV = [
 ];
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="flex justify-around md:justify-around pt-5 bg-cyan-100">
-           <div className="duration-500 hover:-translate-y-3.5">
+    <div className="md:flex justify-between items-center px-5 h-full gap-3 pt-5 bg-cyan-200 mx-auto ">
+      <div className="duration-500 hover:-translate-y-3.5 ">
         <Link href="/">
           <Image src={logo} width={100} height={40} alt="Logo" />
         </Link>
@@ -30,13 +36,13 @@ function Navbar() {
         >
           <Link
             href={link.link}
-            className="text-gray-800 hover:text-gray-400 duration-500 hover:translate-y-3"
+            className="text-gray-800 hover:text-blue-600 duration-500 hover:text-3xl hover:translate-x-2"
           >
             {link.name}
           </Link>
         </div>
       ))}
-      <div className="md:hidden flex basis-16 mt-5	 text-3xl "></div>
+
       <div className="px-8">
         <Button text={"Apply"} link={"https://portal.piaic.org/"} />
       </div>
