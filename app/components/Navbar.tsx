@@ -10,15 +10,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export const NAV = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Courses", link: "/Courses" },
-  { id: 3, name: "Piaic", link: "https://portal.piaic.org" },
-  { id: 4, name: "Panaverse", link: "https://www.panaverse.co" },
+  // { id: 3, name: "Piaic", link: "https://portal.piaic.org" },
+  // { id: 4, name: "Panaverse", link: "https://www.panaverse.co" },
   { id: 5, name: "Contact", link: "https://github.com/shoaibattari" },
 ];
-// let [open,setOpen]=useState(false);
 
 function Navbar() {
   return (
-    <div className="flex justify-between md:justify-between pt-5 bg-cyan-100">
+    <div className="flex justify-around md:justify-around pt-5 bg-cyan-100">
            <div className="duration-500 hover:-translate-y-3.5">
         <Link href="/">
           <Image src={logo} width={100} height={40} alt="Logo" />
