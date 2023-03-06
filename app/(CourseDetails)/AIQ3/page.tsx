@@ -1,5 +1,5 @@
 import React from "react";
-import { Q1Detail, Q1link } from "../Q1Detail/Q1Database";
+import { AIQ3Detail, AIQ3link } from "../AIQ3/AIQ3Database";
 import Link from "next/link";
 import Button from "@/app/components/Button";
 
@@ -8,7 +8,7 @@ function Q1Details() {
     <div className="bg-slate-900 h-fit py-5 sm:py-10 ">
       <div className="mx-auto  px-6 lg:px-96 py-10 text-center ring-1 ring-inset ring-gray-900/8 duration-700  hover:scale-105  translate-y-3 -skew-x-5">
         <dl>
-          {Q1Detail.map((ele) => (
+          {AIQ3Detail.map((ele) => (
             <div key={ele.id}>
               <p className="mt-2 text-2xl font-bold  text-white sm:text-7xl">
                 {ele.mainH}
@@ -20,7 +20,7 @@ function Q1Details() {
           ))}
         </dl>
         <div className="flex justify-around mt-5">
-          {Q1link.map((ele) => (
+          {AIQ3link.map((ele) => (
              <div  key={ele.id}>
             <Button text={ele.btntext} link={ele.btnlink} />
             </div>

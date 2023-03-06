@@ -13,9 +13,9 @@ export const cards = [
       heading1: "Web 3.0 (Blockchain) and Metaverse Specialization",
       headingText:"This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains",
       card1Heading:'Quarter III W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps',
-      card1Link:'/BCQ3',
+      card1Link:'/BCQ3Detail',
       card2Heading:'Quarter IV MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences',
-      card2Link:'/BCQ4'
+      card2Link:'/BCQ4Detail'
     },
     {
       id: 3,

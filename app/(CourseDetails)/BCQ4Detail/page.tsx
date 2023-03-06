@@ -1,14 +1,14 @@
 import React from "react";
-import { Q1Detail, Q1link } from "../Q1Detail/Q1Database";
+import { BCQ4Detail, BCQ4link } from "../BCQ4Detail/BCQ4Database";
 import Link from "next/link";
 import Button from "@/app/components/Button";
 
-function Q1Details() {
+function BCQ4Details() {
   return (
     <div className="bg-slate-900 h-fit py-5 sm:py-10 ">
       <div className="mx-auto  px-6 lg:px-96 py-10 text-center ring-1 ring-inset ring-gray-900/8 duration-700  hover:scale-105  translate-y-3 -skew-x-5">
         <dl>
-          {Q1Detail.map((ele) => (
+          {BCQ4Detail.map((ele) => (
             <div key={ele.id}>
               <p className="mt-2 text-2xl font-bold  text-white sm:text-7xl">
                 {ele.mainH}
@@ -20,7 +20,7 @@ function Q1Details() {
           ))}
         </dl>
         <div className="flex justify-around mt-5">
-          {Q1link.map((ele) => (
+          {BCQ4link.map((ele) => (
              <div  key={ele.id}>
             <Button text={ele.btntext} link={ele.btnlink} />
             </div>
@@ -31,4 +31,4 @@ function Q1Details() {
   );
 }
 
-export default Q1Details;
+export default BCQ4Details;
