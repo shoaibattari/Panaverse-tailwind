@@ -7,7 +7,7 @@ function Partners() {
   return (
     <div className="w-full bg-black">
       
-        <h1 className="text-3xl font-semibold text-white text-center">
+        <h1 className="text-3xl font-semibold text-white text-center mt-20">
           Strategic Partners
         </h1>
         <div className="flex flex-wrap items-center justify-center gap-10 md:gap-5 py-10 md:py-5">

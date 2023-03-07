@@ -11,8 +11,7 @@ export const NAV = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Courses", link: "/Courses" },
   { id: 3, name: "Piaic", link: "https://portal.piaic.org" },
-  { id: 4, name: "Panaverse", link: "https://www.panaverse.co" },
-  // { id: 5, name: "Contact", link: "https://github.com/shoaibattari" },
+  { id: 4, name: "Contact", link: "https://github.com/shoaibattari" },
 ];
 
 function Navbar() {
