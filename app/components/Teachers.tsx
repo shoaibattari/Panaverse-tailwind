@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-// import Zia from "../../public/Zia.webp"
-// import Zeehsan from "../../public/Zeeshan.png"
-// import Daniyal from "../../public/daniyal.jpg"
-// import Adil from "../../public/adil.jpg"
-// import Hira from "../../public/Hira.webp"
+import Zia from "../../public/Zia.webp"
+import Zeehsan from "../../public/Zeeshan.png"
+import Daniyal from "../../public/daniyal.jpg"
+import Adil from "../../public/adil.jpg"
+import Hira from "../../public/Hira.webp"
 
 
 
@@ -15,14 +15,14 @@ const Faculty = [
     id: 1,
     name: "COO PIAIC Zia Khan",
     text: "Main Instructor",
-    Image: "/../public/Zia.webp",
+    Image: "/Zia.webp",
     Alt: "Zia Khan"
   },
   {
     id: 2,
     name: "Sir Zeeshan",
     text: "Instructor",
-    Image: "/../public/zeeshan.jpg",
+    Image: "/zeeshan.jpg",
     Alt: "Sir Zeeshan"
 
   },
@@ -30,15 +30,15 @@ const Faculty = [
     id: 3,
     name: "Sir Daniyal",
     text: "Instructor",
-    Image: "/../public/daniyal.jpg",
+    Image: "/daniyal.jpg",
     Alt: "Sir Daniyal"
 
   },
-  {
+  { 
     id: 4,
     name: "Sir Adil",
     text: "Instructor",
-    Image: "/../public/adil.jpg",
+    Image: "/adil.jpg", 
     Alt: "Sir Adil"
 
   },
@@ -46,7 +46,7 @@ const Faculty = [
     id: 5,
     name: "Mam Hira",
     text: "Instructor",
-    Image: "/../public/hira.webp",
+    Image: "/hira.webp",
     Alt: "Mam Hira"
 
   },
@@ -64,7 +64,6 @@ function TeachersBox() {
             key={ele.id}
           >
             <div>
-            {/* <Image src={ele.Image} width={120} height={120} alt="Teacher"  className="h-40 w-40 rounded-full" /> */}
               <Image src={ele.Image} width={120} height={120} alt={ele.Alt}  className="h-40 w-40 rounded-full" />
             </div>
 
