@@ -1,42 +1,59 @@
 import React from "react";
 import Image from "next/image";
+// import Zia from "../../public/Zia.webp"
+// import Zeehsan from "../../public/Zeeshan.png"
+// import Daniyal from "../../public/daniyal.jpg"
+// import Adil from "../../public/adil.jpg"
+// import Hira from "../../public/Hira.webp"
+
+
+
+
 
 const Faculty = [
   {
     id: 1,
     name: "COO PIAIC Zia Khan",
     text: "Main Instructor",
-    image: "/../public/Zia.webp",
+    Image: "/../public/Zia.webp",
+    Alt: "Zia Khan"
   },
   {
     id: 2,
     name: "Sir Zeeshan",
     text: "Instructor",
-    image: "/../public/zeeshan.jpg",
+    Image: "/../public/zeeshan.jpg",
+    Alt: "Sir Zeeshan"
+
   },
   {
     id: 3,
     name: "Sir Daniyal",
     text: "Instructor",
-    image: "/../public/daniyal.jpg",
+    Image: "/../public/daniyal.jpg",
+    Alt: "Sir Daniyal"
+
   },
   {
     id: 4,
     name: "Sir Adil",
     text: "Instructor",
-    image: "/../public/adil.jpg",
+    Image: "/../public/adil.jpg",
+    Alt: "Sir Adil"
+
   },
   {
     id: 5,
     name: "Mam Hira",
     text: "Instructor",
-    image: "/../public/hira.webp",
+    Image: "/../public/hira.webp",
+    Alt: "Mam Hira"
+
   },
 ];
 
 function TeachersBox() {
-  return (
-    <div>
+  return (<div>
       <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-32 text-center">
         ------------Faculty------------
       </h2>
@@ -47,7 +64,8 @@ function TeachersBox() {
             key={ele.id}
           >
             <div>
-              <Image src={ele.image} width={120} height={120} alt="Teacher"  className="h-40 w-40 rounded-full" />
+            {/* <Image src={ele.Image} width={120} height={120} alt="Teacher"  className="h-40 w-40 rounded-full" /> */}
+              <Image src={ele.Image} width={120} height={120} alt={ele.Alt}  className="h-40 w-40 rounded-full" />
             </div>
 
             <h3 className="text-2xl font-semibold leading-7 tracking-tight text-gray-900">
