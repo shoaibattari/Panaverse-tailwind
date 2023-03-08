@@ -10,7 +10,7 @@ function Q1Details() {
         <dl>
           {Q2Detail.map((ele) => (
             <div key={ele.id}>
-              <p className="mt-2 text-2xl font-bold  text-white sm:text-7xl">
+               <p className="mt-2 text-1xl font-bold  text-white md:text-3xl">
                 {ele.mainH}
               </p>
               <dt className="mt-3  rounded-lg bg-indigo-600 px-3 py-2 text-center text-sm lg:text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500">

@@ -18,7 +18,7 @@ function Navbar() {
   let [open, setOpen] = useState(false);
   return (
     <div className=" w-full top-0 left-0 ">
-      <div className="md:flex items-center justify-between bg-cyan-200 py-4 md:px-10 px-7 ">
+      <div className="md:flex items-center justify-between bg-cyan-200 py-4 md:px-10 px-7">
         <div className="duration-500  hover:-translate-y-3.5">
           <Link href="/">
             <Image src={logo} width={100} height={40} alt="Logo" />
@@ -33,7 +33,7 @@ function Navbar() {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 bg-cyan-200 absolute md:static left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={` z-10 md:flex md:items-center md:pb-0 pb-12  bg-cyan-200 absolute md:static left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-20 " : "top-[-490px]"
           }`}
         >

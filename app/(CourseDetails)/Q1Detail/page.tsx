@@ -10,7 +10,7 @@ function Q1Details() {
         <dl>
           {Q1Detail.map((ele) => (
             <div key={ele.id}>
-              <p className="mt-2 text-2xl font-bold  text-white sm:text-7xl">
+              <p className="mt-2 text-1xl font-bold  text-white md:text-3xl">
                 {ele.mainH}
               </p>
               <dt className="mt-3  rounded-lg bg-indigo-600 px-3 py-2 text-center text-sm lg:text-2xl font-semibold text-white shadow-sm hover:bg-indigo-500">
@@ -21,8 +21,8 @@ function Q1Details() {
         </dl>
         <div className="flex justify-around mt-5">
           {Q1link.map((ele) => (
-             <div  key={ele.id}>
-            <Button text={ele.btntext} link={ele.btnlink} />
+            <div key={ele.id}>
+              <Button text={ele.btntext} link={ele.btnlink} />
             </div>
           ))}
         </div>
