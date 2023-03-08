@@ -10,26 +10,26 @@ const Faculty = [
   },
   {
     id: 2,
-    name: "COO PIAIC Zia Khan",
-    text: "Main Instructor",
+    name: "Sir Zeeshan",
+    text: "Instructor",
     image: "/../public/zeeshan.jpg",
   },
   {
     id: 3,
-    name: "COO PIAIC Zia Khan",
-    text: "Main Instructor",
+    name: "Sir Daniyal",
+    text: "Instructor",
     image: "/../public/daniyal.jpg",
   },
   {
     id: 4,
-    name: "COO PIAIC Zia Khan",
-    text: "Main Instructor",
+    name: "Sir Adil",
+    text: "Instructor",
     image: "/../public/adil.jpg",
   },
   {
     id: 5,
-    name: "COO PIAIC Zia Khan",
-    text: "Main Instructor",
+    name: "Mam Hira",
+    text: "Instructor",
     image: "/../public/hira.webp",
   },
 ];
@@ -40,20 +40,20 @@ function TeachersBox() {
       <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-32 text-center">
         ------------Faculty------------
       </h2>
-      <div className="flex md:flex-shrink-0 flex-wrap justify-center content-center gap-5 ">
+      <div className="flex md:flex-shrink-0 flex-wrap justify-center content-center">
         {Faculty.map((ele) => (
           <div
-            className="mr-3 ml-3 mt-20 mb-5  box-border p-4 border-1 w-4/4 md:w-2/4 hover:uppercase lg:w-1/4 drop-shadow-2xl cursor-pointer hover:scale-125 "
+            className="mr-3 ml-3 mt-20 mb-5  box-border p-4 border-1 w-4/4 md:w-1/4 hover:uppercase lg:w-1/4 drop-shadow-2xl cursor-pointer hover:scale-125 "
             key={ele.id}
           >
             <div>
-              <Image src={ele.image} width={500} height={400} className="h-36 w-36 rounded-full" />
+              <Image src={ele.image} width={120} height={120} alt="Teacher"  className="h-40 w-40 rounded-full" />
             </div>
 
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+            <h3 className="text-2xl font-semibold leading-7 tracking-tight text-gray-900">
               {ele.name}
             </h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">
+            <p className="text-lg font-semibold leading-6 text-indigo-600">
               {ele.text}
             </p>
           </div>
