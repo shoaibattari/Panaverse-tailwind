@@ -50,16 +50,16 @@ function CourseBox() {
       <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-32 text-center">
         ------------Courses Outline------------
       </h2>
-      <div className="flex md:flex-shrink-0 flex-wrap justify-center content-center gap-5 ">
+      <div className=" xl:px-10 lg:px-10 md:px-8 px-7 flex md:flex-shrink-0 flex-wrap justify-center content-center lg:gap-36 ">
         {Courses.map((ele) => (
           <div
-            className="mr-3 ml-3 mt-20 mb-5  box-border p-4 border-1 w-4/4 md:w-2/4 hover:uppercase lg:w-1/4 drop-shadow-2xl bg-emerald-900 hover:bg-slate-900 rounded-2xl cursor-pointer hover:scale-110 "
+            className="mt-10 box-border p-4 border-1 md:w-9/10 lg:w-5/12 xl:w-3/12   hover:uppercase drop-shadow-2xl bg-emerald-900 hover:bg-slate-900 rounded-2xl cursor-pointer hover:scale-110 "
             key={ele.id}
           >
-            <div className="mt-5 text-center font-extrabold text-2xl text-cyan-200">
+            <div className="mt-2 text-center font-extrabold text-2xl text-cyan-200">
               {ele.heading1}
             </div>
-            <div className="font-bold text-1xl h-20 mt-10 md:h-36 lg:h-40 text-gray-200">
+            <div className="font-bold text-1xl mt-10 md:h-36 lg:h-40 text-gray-200">
               {ele.heading2}
             </div>
             <div className=" mt-20 md:mt-10 text-center">

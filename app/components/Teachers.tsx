@@ -54,16 +54,17 @@ const Faculty = [
 
 function TeachersBox() {
   return (<div>
-      <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-32 text-center">
+      <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-10 text-center">
         ------------Faculty------------
       </h2>
       <div className="flex md:flex-shrink-0 flex-wrap justify-center content-center">
         {Faculty.map((ele) => (
           <div
-            className="mr-3 ml-3 mt-20 mb-5  box-border p-4 border-1 w-4/4 md:w-1/4 hover:uppercase lg:w-1/4 drop-shadow-2xl cursor-pointer hover:scale-125 "
+            className="xl:px-10 lg:px-10 md:px-8 px-7 mr-3 ml-3 mt-10 
+            box-border border-1 hover:uppercase drop-shadow-2xl cursor-pointer hover:scale-125 "
             key={ele.id}
           >
-            <div>
+            <div className="xl:mx-4 ">
               <Image src={ele.Image} width={120} height={120} alt={ele.Alt}  className="h-40 w-40 rounded-full" />
             </div>
 

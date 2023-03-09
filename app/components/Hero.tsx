@@ -4,16 +4,13 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <div>
-      <div className="sm:mt-full -z-10 md:mt-0 bg-gray-700 py-24 sm:py-32 relative isolate  ">
-        <Image
-          src={Class}
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full  opacity-30 "
-        />
+      <div 
+      className="xl:px-10lg:px-10 md:px-8 px-7 sm:mt-full -z-10 md:mt-0 bg-emerald-900 py-24 sm:py-32 relative isolate  ">
+       
 
-        <div className="mx-auto  px-8 lg:px-12">
+        <div className="mx-auto ">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-1xl font-bold text-center text-emerald-500 md:text-3xl">
+            <h2 className="text-1xl font-bold text-center text-emerald-500 md:text-4xl uppercase underline underline-offset-8">
               Presidential Initiative for Artificial Intelligence and Computing
               (PIAIC)
             </h2>
@@ -37,7 +34,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mb-10 -mt-24 gap-10 ">
+      <div className="flex justify-center mb-10 -mt-24  md:gap-10 ">
         <Button text={"Apply Now"} link={"https://portal.piaic.org/"} />
         <Button text={"Courses Details"} link={"/Courses"} />
       </div>

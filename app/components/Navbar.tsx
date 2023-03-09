@@ -1,5 +1,5 @@
 "use client";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.webp";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -21,7 +21,7 @@ function Navbar() {
       <div className="md:flex items-center justify-between bg-cyan-200 py-4 md:px-10 px-7">
         <div className="duration-500  hover:-translate-y-3.5">
           <Link href="/">
-            <Image src={logo} width={100} height={40} alt="Logo" />
+            <Image src={logo} width={70} height={40} alt="Logo"/>
           </Link>
         </div>
 
