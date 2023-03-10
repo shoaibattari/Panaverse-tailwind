@@ -1,16 +1,12 @@
-import Class from "../../public/class.jpg";
-import Image from "next/image";
 import Button from "./Button";
+
 export default function Hero() {
   return (
     <div>
-      <div 
-      className="xl:px-10lg:px-10 md:px-8 px-7 sm:mt-full -z-10 md:mt-0 bg-emerald-900 py-24 sm:py-32 relative isolate  ">
-       
-
+      <div className=" bg-[url('/bg-01.webp')] bg-cover relative xl:px-10lg:px-10 md:px-8 px-7 sm:mt-full md:mt-0 py-24 sm:py-5  ">
         <div className="mx-auto ">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-1xl font-bold text-center text-emerald-500 md:text-4xl uppercase underline underline-offset-8">
+            <h2 className="text-1xl font-bold text-center text-emerald-500 md:text-4xl uppercase ">
               Presidential Initiative for Artificial Intelligence and Computing
               (PIAIC)
             </h2>
@@ -33,10 +29,10 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center mb-10 -mt-24  md:gap-10 ">
-        <Button text={"Apply Now"} link={"https://portal.piaic.org/"} />
-        <Button text={"Courses Details"} link={"/Courses"} />
+        <div className="flex justify-center mt-5 lg:mt-3  md:gap-5 ">
+          <Button text={"Apply Now"} link={"https://portal.piaic.org/"} />
+          <Button text={"Courses Details"} link={"/Courses"} />
+        </div>
       </div>
     </div>
   );

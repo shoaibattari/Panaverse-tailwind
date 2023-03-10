@@ -7,7 +7,12 @@ import Button from "./Button";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export const NAV = [
+interface Navbar {
+  id: number;
+  name: string;
+  link: string;
+}
+export const NAV: Navbar[] = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Courses", link: "/Courses" },
   { id: 3, name: "Piaic", link: "https://portal.piaic.org" },
@@ -21,7 +26,7 @@ function Navbar() {
       <div className="md:flex items-center justify-between bg-cyan-200 py-4 md:px-10 px-7">
         <div className="duration-500  hover:-translate-y-3.5">
           <Link href="/">
-            <Image src={logo} width={70} height={40} alt="Logo"/>
+            <Image src={logo} width={70} height={40} alt="Logo" />
           </Link>
         </div>
 
@@ -38,7 +43,7 @@ function Navbar() {
           }`}
         >
           {NAV.map((link) => (
-            <li key={link.id} className="md:mr-20  text-xl md:my-0 my-7"> 
+            <li key={link.id} className="md:mr-20  text-xl md:my-0 my-7">
               <Link
                 href={link.link}
                 className=" text-emerald-800 font-bold hover:text-blue-600 duration-500 hover:text-4xl hover:translate-x-3 "

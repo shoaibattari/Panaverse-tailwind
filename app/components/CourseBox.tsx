@@ -1,7 +1,15 @@
 import React from "react";
 import Button from "./Button";
 
-const Courses = [
+interface Courses {
+  id: number;
+  heading1: string;
+  heading2: string;
+  btntext: string;
+  btnlink: string;
+}
+
+const Courses: Courses[] = [
   {
     id: 1,
     heading1: "Core Courses (Common in All Specializations)",
@@ -47,16 +55,16 @@ const Courses = [
 function CourseBox() {
   return (
     <div>
-      <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-32 text-center">
+      <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-10 text-center">
         ------------Courses Outline------------
       </h2>
-      <div className=" xl:px-10 lg:px-10 md:px-8 px-7 flex md:flex-shrink-0 flex-wrap justify-center content-center lg:gap-36 ">
+      <div className=" xl:px-10 lg:px-10 md:px-8 px-7 flex md:flex-shrink-0 flex-wrap justify-center content-center gap-10 ">
         {Courses.map((ele) => (
           <div
-            className="mt-10 box-border p-4 border-1 md:w-9/10 lg:w-5/12 xl:w-3/12   hover:uppercase drop-shadow-2xl bg-emerald-900 hover:bg-slate-900 rounded-2xl cursor-pointer hover:scale-110 "
+            className="mt-10 box-border p-4 border-1 md:w-5/12 lg:w-4/12 xl:w-3/12   hover:uppercase drop-shadow-2xl bg-emerald-900 hover:bg-slate-900 rounded-2xl cursor-pointer hover:scale-110 "
             key={ele.id}
           >
-            <div className="mt-2 text-center font-extrabold text-2xl text-cyan-200">
+            <div className="mt-3text-center font-extrabold text-2xl text-cyan-200">
               {ele.heading1}
             </div>
             <div className="font-bold text-1xl mt-10 md:h-36 lg:h-40 text-gray-200">

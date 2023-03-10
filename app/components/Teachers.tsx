@@ -1,59 +1,56 @@
+
+
 import React from "react";
 import Image from "next/image";
-import Zia from "../../public/Zia.webp"
-import Zeehsan from "../../public/Zeeshan.png"
-import Daniyal from "../../public/daniyal.jpg"
-import Adil from "../../public/adil.jpg"
-import Hira from "../../public/Hira.webp"
 
-
-
-
-
-const Faculty = [
+interface Teachers {
+  id: number;
+  name: string;
+  text: string;
+  Image: string;
+  Alt: string;
+}
+const Faculty: Teachers[] = [
   {
     id: 1,
     name: "COO PIAIC Zia Khan",
     text: "Main Instructor",
     Image: "/Zia.webp",
-    Alt: "Zia Khan"
+    Alt: "Zia Khan",
   },
   {
     id: 2,
     name: "Sir Zeeshan",
     text: "Instructor",
     Image: "/zeeshan.jpg",
-    Alt: "Sir Zeeshan"
-
+    Alt: "Sir Zeeshan",
   },
   {
     id: 3,
     name: "Sir Daniyal",
     text: "Instructor",
     Image: "/daniyal.jpg",
-    Alt: "Sir Daniyal"
-
+    Alt: "Sir Daniyal",
   },
-  { 
+  {
     id: 4,
     name: "Sir Adil",
     text: "Instructor",
-    Image: "/adil.jpg", 
-    Alt: "Sir Adil"
-
+    Image: "/adil.jpg",
+    Alt: "Sir Adil",
   },
   {
     id: 5,
     name: "Mam Hira",
     text: "Instructor",
     Image: "/hira.webp",
-    Alt: "Mam Hira"
-
+    Alt: "Mam Hira",
   },
 ];
 
 function TeachersBox() {
-  return (<div>
+  return (
+    <div>
       <h2 className="text-1xl md:text-2xl font-semibold uppercase mt-10 text-center">
         ------------Faculty------------
       </h2>
@@ -64,8 +61,14 @@ function TeachersBox() {
             box-border border-1 hover:uppercase drop-shadow-2xl cursor-pointer hover:scale-125 "
             key={ele.id}
           >
-            <div className="xl:mx-4 ">
-              <Image src={ele.Image} width={120} height={120} alt={ele.Alt}  className="h-40 w-40 rounded-full" />
+            <div className="xl:mx-4 lg;mx-4 ">
+              <Image
+                src={ele.Image}
+                width={120}
+                height={120}
+                alt={ele.Alt}
+                className="h-40 w-40 rounded-full"
+              />
             </div>
 
             <h3 className="text-2xl font-semibold leading-7 tracking-tight text-gray-900">
