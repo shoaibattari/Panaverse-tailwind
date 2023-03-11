@@ -61,7 +61,8 @@ function CourseBox() {
       <div className=" xl:px-10 lg:px-10 md:px-8 px-7 flex md:flex-shrink-0 flex-wrap justify-center content-center gap-10">
         {Courses.map((ele) => (
           <div
-            className="mt-10 box-border p-4 border-1 md:w-5/12 lg:w-4/12 xl:w-3/12   hover:uppercase drop-shadow-2xl bg-emerald-900 hover:bg-slate-900 rounded-2xl cursor-pointer hover:scale-110 "
+            className="
+            mt-10 box-border p-4 border-1 md:w-5/12 lg:w-4/12 xl:w-3/12   hover:uppercase drop-shadow-2xl bg-emerald-900 hover:bg-slate-900 rounded-2xl cursor-pointer hover:scale-110 "
             key={ele.id}
           >
             <div className="mt-3text-center font-extrabold text-2xl text-cyan-200">

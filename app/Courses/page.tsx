@@ -5,9 +5,9 @@ import { cards } from "../Courses/Database";
 function page() {
   return (
     <div>
-      <div className="bg-white py-2 sm:py-5">
+      <div className=" bg-gray-100 py-2 sm:py-5">
         <div className="mx-auto  px-6 lg:px-8">
-          <div className="mx-auto  lg:text-center">
+          <div className=" mx-auto  lg:text-center">
             <p className="mt-2 text-5xl leading-loose font-bold  text-indigo-600  sm:text-7xl">
               All Courses
             </p>
