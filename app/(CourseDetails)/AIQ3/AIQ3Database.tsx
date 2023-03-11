@@ -1,4 +1,11 @@
-export const AIQ3Detail = [
+interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+export const AIQ3Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "AI and Deep Learning Q3 Details With Links",
@@ -80,7 +87,12 @@ export const AIQ3Detail = [
   },
 ];
 
-export const AIQ3link = [
+interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
+export const AIQ3link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

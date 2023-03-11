@@ -1,4 +1,11 @@
-export const Q1Detail = [
+ interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+export const Q1Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "Q1 Details With Links",
@@ -80,7 +87,12 @@ export const Q1Detail = [
   },
 ];
 
-export const Q1link = [
+ interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
+export const Q1link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

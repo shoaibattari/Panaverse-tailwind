@@ -1,4 +1,11 @@
-export const BCQ3Detail = [
+interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+export const BCQ3Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "BlockChain Q3 Details With Links",
@@ -80,7 +87,12 @@ export const BCQ3Detail = [
   },
 ];
 
-export const BCQ3link = [
+interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
+export const BCQ3link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

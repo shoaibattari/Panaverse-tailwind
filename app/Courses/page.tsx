@@ -8,7 +8,7 @@ function page() {
       <div className="bg-white py-2 sm:py-5">
         <div className="mx-auto  px-6 lg:px-8">
           <div className="mx-auto  lg:text-center">
-            <p className="mt-2 text-5xl font-bold  text-indigo-600  sm:text-7xl">
+            <p className="mt-2 text-5xl leading-loose font-bold  text-indigo-600  sm:text-7xl">
               All Courses
             </p>
             <p className=" mt-10 text-2xl lg:text-5xl leading-10 tracking-tight   text-emerald-700 ">

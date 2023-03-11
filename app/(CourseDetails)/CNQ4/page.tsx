@@ -6,7 +6,7 @@ import Button from "@/app/components/Button";
 function AIQ4Details() {
   return (
     <div className="bg-slate-900 h-fit py-5 sm:py-10 ">
-      <div className="mx-auto  px-6 lg:px-96 py-10 text-center ring-1 ring-inset ring-gray-900/8 duration-700  hover:scale-105  translate-y-3 -skew-x-5">
+      <div className="mx-auto  px-6 lg:px-20 py-10 text-center ring-1 ring-inset ring-gray-900/8 duration-700  hover:scale-105  translate-y-3 -skew-x-5">
         <dl>
           {CNQ4Detail.map((ele) => (
             <div key={ele.id}>

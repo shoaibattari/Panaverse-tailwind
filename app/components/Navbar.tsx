@@ -22,7 +22,7 @@ export const NAV: Navbar[] = [
 function Navbar() {
   let [open, setOpen] = useState(false);
   return (
-    <div className=" w-full top-0 left-0 ">
+    <div className=" w-full top-0 left-0 animate-pulse ">
       <div className="md:flex items-center justify-between bg-cyan-200 py-4 md:px-10 px-7">
         <div className="duration-500  hover:-translate-y-3.5">
           <Link href="/">

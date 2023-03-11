@@ -1,4 +1,13 @@
-export const AIQ4Detail = [
+interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+
+
+export const AIQ4Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "AI and Deep Learning Q4 Details With Links",
@@ -79,8 +88,12 @@ export const AIQ4Detail = [
     Link: "https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing",
   },
 ];
-
-export const AIQ4link = [
+interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
+export const AIQ4link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

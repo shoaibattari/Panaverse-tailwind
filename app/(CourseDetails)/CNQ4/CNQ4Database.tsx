@@ -1,4 +1,11 @@
-export const CNQ4Detail = [
+interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+export const CNQ4Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "Cloud-Native Computing Q4 Details With Links",
@@ -80,7 +87,12 @@ export const CNQ4Detail = [
   },
 ];
 
-export const CNQ4link = [
+interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
+export const CNQ4link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

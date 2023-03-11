@@ -1,4 +1,11 @@
-export const BCQ4Detail = [
+interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+export const BCQ4Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "BlockChain Q4 Details With Links",
@@ -79,8 +86,13 @@ export const BCQ4Detail = [
     Link: "https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing",
   },
 ];
+interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
 
-export const BCQ4link = [
+export const BCQ4link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

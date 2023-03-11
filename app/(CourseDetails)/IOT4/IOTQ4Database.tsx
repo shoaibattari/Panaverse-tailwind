@@ -1,4 +1,12 @@
-export const IOTQ4Detail = [
+interface QuartersDetail {
+  id: number;
+  mainH?: string;
+  Heading: string;
+  Link: string;
+}
+
+
+export const IOTQ4Detail:QuartersDetail[] = [
   {
     id: 1,
     mainH: "Ambient Computing and IoT Q4 Details With Links",
@@ -80,7 +88,12 @@ export const IOTQ4Detail = [
   },
 ];
 
-export const IOTQ4link = [
+interface Qlink{
+  id: number,
+  btntext: string,
+  btnlink: string,
+}
+export const IOTQ4link:Qlink[] = [
   {
     id: 1,
     btntext: "home",

@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <div>
-      <div className=" bg-[url('/bg-01.webp')] bg-cover relative xl:px-10lg:px-10 md:px-8 px-7 sm:mt-full md:mt-0 py-24 sm:py-5  ">
+      <div className=" bg-[url('/bg-01.webp')] bg-cover relative xl:px-10lg:px-10 md:px-8 px-7 sm:mt-full md:mt-0 py-24 sm:py-5">
         <div className="mx-auto ">
           <div className="mx-auto lg:mx-0">
             <h2 className="text-1xl font-bold text-center text-emerald-500 md:text-4xl uppercase ">
