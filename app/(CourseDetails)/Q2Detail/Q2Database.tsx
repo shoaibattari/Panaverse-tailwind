@@ -1,3 +1,4 @@
+
 interface QuartersDetail {
   id: number;
   mainH?: string;

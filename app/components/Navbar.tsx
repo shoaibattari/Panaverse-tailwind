@@ -22,7 +22,7 @@ export const NAV: Navbar[] = [
 function Navbar() {
   let [open, setOpen] = useState(false);
   return (
-    <div className=" w-full top-0 left-0 animate-pulse ">
+    <div className=" w-full top-0 left-0 ">
       <div className="md:flex items-center justify-between bg-cyan-200 py-4 md:px-10 px-7">
         <div className="duration-500  hover:-translate-y-3.5">
           <Link href="/">
@@ -32,7 +32,7 @@ function Navbar() {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl  absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
         >
           <GiHamburgerMenu name={open ? "close" : "menu"}></GiHamburgerMenu>
         </div>
@@ -43,10 +43,10 @@ function Navbar() {
           }`}
         >
           {NAV.map((link) => (
-            <li key={link.id} className="md:mr-20  text-xl md:my-0 my-7">
+            <li key={link.id}  className="md:mr-20  text-xl md:my-0 my-7">
               <Link
                 href={link.link}
-                className=" text-emerald-800 font-bold hover:text-blue-600 duration-500 hover:text-4xl hover:translate-x-3 "
+                className=" z-10 text-emerald-800 font-bold hover:text-blue-600 duration-500 hover:text-4xl hover:translate-x-3 "
               >
                 {link.name}
               </Link>
